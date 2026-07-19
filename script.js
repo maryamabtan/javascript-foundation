@@ -48,3 +48,17 @@ if(isAvailableForHire){
     statusElement.style.color = "red"
 }
 
+let yearsOfExperience = 1;
+let experienceElement = document.getElementById("experience");
+if(yearsOfExperience < 2){
+    experienceElement.innerHTML = "Junior Developer";
+    experienceElement.style.color = "blue";
+}
+else if(yearsOfExperience >=2 && yearsOfExperience <= 5) {
+    experienceElement.innerHTML = "Mid-Level Developer";
+    experienceElement.style.color = "orange";
+}
+else {
+    experienceElement.innerHTML = "Senior Developer";
+    experienceElement.style.color = "red";
+}
