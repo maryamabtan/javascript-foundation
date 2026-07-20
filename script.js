@@ -62,3 +62,12 @@ else {
     experienceElement.innerHTML = "Senior Developer";
     experienceElement.style.color = "red";
 }
+function promoteMe(){
+
+    jobElement.innerHTML = "Job: Front-end + JavaScript Developer";
+    jobElement.style.color = "green";
+
+    statusElement.innerHTML = "🚀 Promoted!";
+    statusElement.style.color = "purple";
+
+}
