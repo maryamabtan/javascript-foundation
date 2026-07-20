@@ -62,12 +62,27 @@ else {
     experienceElement.innerHTML = "Senior Developer";
     experienceElement.style.color = "red";
 }
+
 function promoteMe(){
+    jobElement.innerHTML = "Front-end + JavaScript Developer";
+    jobElement.style.color = "purple";
+    statusElement.innerHTML = "Promoted";
+    statusElement.style.color = "green"
+    alert("Congratulations! 🎉")
+}
 
-    jobElement.innerHTML = "Job: Front-end + JavaScript Developer";
-    jobElement.style.color = "green";
+function sumNumbers(){
+    let number1 = 20;
+    let number2 = 30;
+    let result = number1 + number2;
 
-    statusElement.innerHTML = "🚀 Promoted!";
-    statusElement.style.color = "purple";
+alert (result);
+}
 
+function surprise(){
+    alert("I love JavaScript")
+}
+function showCountry(){
+    let country = "Netherlands";
+    alert(country)
 }
