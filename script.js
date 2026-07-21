@@ -86,3 +86,15 @@ function showCountry(){
     let country = "Netherlands";
     alert(country)
 }
+function sayHello(name){
+    alert("Hello " + name)
+}
+function showAge(age){
+    alert("Age: " + age)
+}
+function showCountry(country){
+    alert("Country: " + country)
+}
+function sum(a, b) {
+    alert(a + b);
+}
