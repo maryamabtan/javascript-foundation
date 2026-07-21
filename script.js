@@ -132,3 +132,9 @@ function showSubtraction(){
     let result = subtraction(first, second);
     alert(result);
 }
+function showIt(){
+    let first = Number(document.getElementById("num1").value);
+    let second = Number(document.getElementById("TypeNum2").value);
+    let result = sum(first, second);
+    document.getElementById("showsResult").innerHTML = "result: " + result;
+}
