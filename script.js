@@ -101,16 +101,34 @@ function sum(a, b) {
 function getAge() {
     return 23;
 }
-function sum(a, b){
-    return a + b;
-}
 function showResult(){
     let result = sum(20, 30);
     alert(result);
+}
+function sum(a, b){
+    return a + b;
+}
+function multiply(a, b){
+    return a * b;
+}
+function subtraction(a, b){
+    return a - b;
 }
 function calculate(){
     let first = Number(document.getElementById('num1').value);
     let second = Number(document.getElementById('num2').value);
     let result = sum(first, second);
+    alert(result);
+}
+function showMultiply(){
+    let first = Number(document.getElementById('num1').value);
+    let second = Number(document.getElementById('num2').value);
+    let result = multiply(first, second);
+    alert(result);
+}
+function showSubtraction(){
+    let first = Number(document.getElementById('num1').value);
+    let second = Number(document.getElementById('num2').value);
+    let result = subtraction(first, second);
     alert(result);
 }
