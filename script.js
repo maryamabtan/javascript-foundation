@@ -1,5 +1,5 @@
 let nameElement = document.getElementById("name");
-nameElement.innerHTML = "maryam";
+nameElement.innerHTML = "Maryam";
 
 let ageElement = document.getElementById("age");
 ageElement.innerHTML = "23";
@@ -97,4 +97,14 @@ function showCountry(country){
 }
 function sum(a, b) {
     alert(a + b);
+}
+function getAge() {
+    return 23;
+}
+function sum(a, b){
+    return a + b;
+}
+function showResult(){
+    let result = sum(20, 30);
+    alert(result);
 }
