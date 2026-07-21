@@ -108,3 +108,9 @@ function showResult(){
     let result = sum(20, 30);
     alert(result);
 }
+function calculate(){
+    let first = Number(document.getElementById('num1').value);
+    let second = Number(document.getElementById('num2').value);
+    let result = sum(first, second);
+    alert(result);
+}
