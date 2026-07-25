@@ -43,3 +43,19 @@ function play(playerChoice) {
     document.getElementById("drawScore").innerHTML =
         "Draw: " + drawScore;
 }
+
+
+function resetGame() {
+
+    playerScore = 0;
+    computerScore = 0;
+    drawScore = 0;
+
+    document.getElementById("player").innerHTML = "-";
+    document.getElementById("computer").innerHTML = "-";
+    document.getElementById("result").innerHTML = "-";
+
+    document.getElementById("playerScore").innerHTML = "You: 0";
+    document.getElementById("computerScore").innerHTML = "Computer: 0";
+    document.getElementById("drawScore").innerHTML = "Draw: 0";
+}
