@@ -1,3 +1,7 @@
+let playerScore = 0;
+let computerScore = 0;
+let drawScore = 0;
+
 function play(playerChoice) {
 
     let choices = ["Rock", "Paper", "Scissors"];
@@ -13,6 +17,7 @@ function play(playerChoice) {
 
     if (playerChoice === computerChoice) {
         result = "Draw";
+        drawScore++;
     }
     else if (
         (playerChoice === "Rock" && computerChoice === "Scissors") ||
@@ -20,10 +25,21 @@ function play(playerChoice) {
         (playerChoice === "Scissors" && computerChoice === "Paper")
     ) {
         result = "You Win!";
+        playerScore++;
     }
     else {
         result = "Computer Wins!";
+        computerScore++;
     }
 
     document.getElementById("result").innerHTML = result;
+
+    document.getElementById("playerScore").innerHTML =
+        "You: " + playerScore;
+
+    document.getElementById("computerScore").innerHTML =
+        "Computer: " + computerScore;
+
+    document.getElementById("drawScore").innerHTML =
+        "Draw: " + drawScore;
 }
