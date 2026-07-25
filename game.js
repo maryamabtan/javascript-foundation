@@ -16,21 +16,30 @@ function play(playerChoice) {
     let result = "";
 
     if (playerChoice === computerChoice) {
-        result = "Draw";
-        drawScore++;
-    }
-    else if (
-        (playerChoice === "Rock" && computerChoice === "Scissors") ||
-        (playerChoice === "Paper" && computerChoice === "Rock") ||
-        (playerChoice === "Scissors" && computerChoice === "Paper")
-    ) {
-        result = "You Win!";
-        playerScore++;
-    }
-    else {
-        result = "Computer Wins!";
-        computerScore++;
-    }
+    result = "Draw";
+    drawScore++;
+    document.getElementById("result").style.color = "orange";
+}
+else if (
+    (playerChoice === "Rock" && computerChoice === "Scissors") ||
+    (playerChoice === "Paper" && computerChoice === "Rock") ||
+    (playerChoice === "Scissors" && computerChoice === "Paper")
+) {
+    result = "You Win!";
+    playerScore++;
+    document.getElementById("result").style.color = "green";
+}
+else {
+    result = "Computer Wins!";
+    computerScore++;
+    document.getElementById("result").style.color = "red";
+}
+
+document.getElementById("result").innerHTML = result;
+
+document.getElementById("playerScore").innerHTML = "You: " + playerScore;
+document.getElementById("computerScore").innerHTML = "Computer: " + computerScore;
+document.getElementById("drawScore").innerHTML = "Draw: " + drawScore;
 
     document.getElementById("result").innerHTML = result;
 
