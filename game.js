@@ -2,6 +2,18 @@ let playerScore = 0;
 let computerScore = 0;
 let drawScore = 0;
 
+function getEmoji(choice) {
+    if (choice === "Rock") {
+        return "✊";
+    }
+    else if (choice === "Paper") {
+        return "✋";
+    }
+    else {
+        return "✌️";
+    }
+}
+
 function play(playerChoice) {
 
     let choices = ["Rock", "Paper", "Scissors"];
@@ -10,8 +22,11 @@ function play(playerChoice) {
 
     let computerChoice = choices[randomIndex];
 
-    document.getElementById("player").innerHTML = playerChoice;
-    document.getElementById("computer").innerHTML = computerChoice;
+    document.getElementById("player").innerHTML =
+    getEmoji(playerChoice) + " " + playerChoice;
+
+document.getElementById("computer").innerHTML =
+    getEmoji(computerChoice) + " " + computerChoice;
 
     let result = "";
 
