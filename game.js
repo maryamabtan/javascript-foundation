@@ -52,6 +52,16 @@ else {
 
 document.getElementById("result").innerHTML = result;
 
+if (result === "You Win!") {
+    document.getElementById("lastWinner").innerHTML = "🏆 You";
+}
+else if (result === "Computer Wins!") {
+    document.getElementById("lastWinner").innerHTML = "💻 Computer";
+}
+else {
+    document.getElementById("lastWinner").innerHTML = "🤝 Nobody (Draw)";
+}
+
 document.getElementById("playerScore").innerHTML = "You: " + playerScore;
 document.getElementById("computerScore").innerHTML = "Computer: " + computerScore;
 document.getElementById("drawScore").innerHTML = "Draw: " + drawScore;
@@ -82,4 +92,6 @@ function resetGame() {
     document.getElementById("playerScore").innerHTML = "You: 0";
     document.getElementById("computerScore").innerHTML = "Computer: 0";
     document.getElementById("drawScore").innerHTML = "Draw: 0";
+
+    document.getElementById("lastWinner").innerHTML = "-";
 }
