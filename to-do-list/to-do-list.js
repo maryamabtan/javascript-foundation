@@ -12,6 +12,10 @@ function addTask() {
 
     li.innerHTML = taskText;
 
+    li.addEventListener("click", function() {
+        li.style.textDecoration = "line-through";
+    });
+
     let deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Delete";
 
